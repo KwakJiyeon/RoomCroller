@@ -1,0 +1,31 @@
+/* styles.css */
+.escapeRoomItem {
+    padding: 16px;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    position: relative;
+    
+  }
+  
+  /* isNew가 true일 때 하이라이트 표시 */
+  .escapeRoomItem.new {
+    border-color: #ff5733 !important;
+    background-color: #fff0e6 !important;
+    color: orange;
+  }
+  
+  /* NEW! 배지 스타일 */
+  .escapeRoomItem.new::before {
+    content: "NEW!!!!";
+    color: #fff;
+    background-color: #ff5733;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+  }
+  

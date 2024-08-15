@@ -1,10 +1,12 @@
 export interface EscapeRoom {
-    id: string;
-    name: string;
-    location: string;
-    rating: number;
-    difficulty: number;
-    isNew: boolean;
-    releaseDate: string;
+      id: number;
+      store: string;
+      name: string;
+      rating: number;
+      difficulty: number;
+      reviews: number;
+      area: string;
+      isNew: boolean;
+      createdAt: Date;
   }
   
